@@ -8,7 +8,7 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mesto</title>
-    <script type="module" crossorigin src="./assets/index-CslG3GHh.js"></script>
+    <script type="module" crossorigin src="./assets/index-CdwRM3aS.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-D2z4Cjqv.css">
   </head>
   <body class="page">
@@ -51,6 +51,7 @@
                 maxlength="40"
                 pattern="[A-Za-zА-Яа-яЁё\-\s]+"
               />
+              <span class="popup__error" id="user-name-error"></span>
             </label>
             <label class="popup__label">
               <input
@@ -63,6 +64,7 @@
                 minlength="2"
                 maxlength="200"
               />
+              <span class="popup__error" id="user-description-error"></span>
             </label>
             <button type="submit" class="button popup__button popup__button_disabled" disabled>
               Сохранить
@@ -88,6 +90,7 @@
                 maxlength="30"
                 pattern="[A-Za-zА-Яа-яЁё\-\s]+"
               />
+              <span class="popup__error" id="place-name-error"></span>
             </label>
             <label class="popup__label">
               <input
@@ -98,6 +101,7 @@
                 placeholder="Ссылка на картинку"
                 required
               />
+              <span class="popup__error" id="place-link-error"></span>
             </label>
             <button type="submit" class="button popup__button popup__button_disabled" disabled>
               Создать
@@ -143,6 +147,7 @@
                 placeholder="Ссылка на изображение"
                 required
               />
+              <span class="popup__error" id="user-avatar-error"></span>
             </label>
             <button type="submit" class="button popup__button popup__button_disabled" disabled>
               Сохранить
@@ -164,7 +169,7 @@
 
 
     <template id="card-template">
-      <li class="places__item card" data-id="">
+      <li class="places__item card">
         <img class="card__image" src="" alt="" />
         <div class="card__control">
           <!--<button type="button" class="card__control-button card__control-button_type_info"></button>-->
